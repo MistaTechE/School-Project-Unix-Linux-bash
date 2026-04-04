@@ -7,7 +7,7 @@
 
 TARGET="8.8.8.8"
 
-# Ping once 2 sec timeout
+#ping once 2 sec timeout
 if ping -c 1 -W 2 "$TARGET" >/dev/null 2>&1; then
     echo "Connection to $TARGET is successful."
 else
