@@ -7,7 +7,7 @@
 
 TARGET="google.com"
 
-# Ping once 2 sec timeout
+#ping once 2 sec timeout
 if ping -c 1 -W 2 "$TARGET" >/dev/null 2>&1; then
     echo "Network is up."
 else
