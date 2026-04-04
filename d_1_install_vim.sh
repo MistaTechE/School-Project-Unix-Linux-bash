@@ -5,9 +5,7 @@
 # Author: Evan Meserve
 # Student ID 011285590
 
-echo "Checking for Vim installation..."
-
-# Detect package manager and install Vim
+# detect package manager and install Vim
 if command -v vim >/dev/null 2>&1; then
     echo "Vim is already installed."
 else
@@ -19,14 +17,7 @@ else
     elif command -v yum >/dev/null 2>&1; then
         sudo yum install -y vim
     else
-        echo "No supported package manager found"
+        echo "error"
         exit 1
     fi
-fi
-
-# Verify installation
-if command -v vim >/dev/null 2>&1; then
-    echo "Vim successfully installed!"
-else
-    echo "Vim installation failed."
 fi
