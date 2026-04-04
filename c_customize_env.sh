@@ -5,10 +5,9 @@
 # Author: Evan Meserve
 # Student ID 011285590
 
-#1. update ~/.bashrc ===
+#1. update ~/.bashrc with custom rainbow prompt colors
 cat << 'EOF' >> ~/.bashrc
 
-#custom rainbow prompt colors
 COLORS=(31 32 33 34 35 36)
 INDEX=0
 set_rainbow_prompt() {
@@ -17,15 +16,17 @@ COLOR=${COLORS[$INDEX]}
 PS1="\[\033[1;${COLOR}m\]\$\[\033[0m\] "
 }
 PROMPT_COMMAND=set_rainbow_prompt
+EOF
 
 #2. aliases file
+cat << 'EOF' >> ~/.bashrc
 if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
 export PATH="$HOME/bin:$PATH"
 EOF
-cat << 'EOF' > ~/.bash_aliases
 
+cat << 'EOF' > ~/.bash_aliases
 alias lrt='ls -lrt'
 alias la='ls -a'
 alias c='clear'
@@ -43,13 +44,11 @@ chmod +x ~/bin/"$script"
 fi
 done
 
-#4. Apply changes immediately ===
+#4b. apply changes in shell
 source ~/.bashrc
-echo "Changes applied"
 
-# === 5. Verification ===
+# 4c. verification
 echo "Verifying prompt, aliases, PATH, and script execution..."
-
 echo "Current prompt should now cycle colors."
 echo "Testing aliases:"
 lrt
