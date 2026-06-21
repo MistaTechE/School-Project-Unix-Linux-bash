@@ -1,7 +1,5 @@
-#f_assess_clean.sh
 #!/bin/bash
-
-
+#f_assess_clean.sh
 
 #1. free disk space and store in variable
 FREE_BEFORE=$(df / | awk 'NR==2 {print $4}')
