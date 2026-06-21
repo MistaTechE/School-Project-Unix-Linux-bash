@@ -1,6 +1,5 @@
-#g_archive_compress.sh
 #!/bin/bash
-
+#g_archive_compress.sh
 
 #1. function to get file size
 fileSize() {
