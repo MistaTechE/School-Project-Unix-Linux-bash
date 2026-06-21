@@ -1,6 +1,5 @@
-#c_customize_env.sh
 #!/bin/bash
-
+#c_customize_env.sh
 
 #1. update ~/.bashrc with custom rainbow prompt colors
 cat << 'EOF' >> ~/.bashrc
