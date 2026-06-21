@@ -1,5 +1,5 @@
-#d_1_install_vim.sh
 #!/bin/bash
+#d_1_install_vim.sh
 
 
 # detect package manager and install Vim
