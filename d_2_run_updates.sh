@@ -1,6 +1,5 @@
-#d_2_run_updates.sh
 #!/bin/bash
-
+#d_2_run_updates.sh
 
 LOGFILE="$HOME/update.log"
 
