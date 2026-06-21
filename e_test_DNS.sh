@@ -1,6 +1,5 @@
-#e_test_DNS.sh
 #!/bin/bash
-
+#e_test_DNS.sh
 
 TARGET="8.8.8.8"
 
