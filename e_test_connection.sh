@@ -1,6 +1,5 @@
-#e_test_connection.sh
 #!/bin/bash
-
+#e_test_connection.sh
 
 DOMAIN="example.com"
 
