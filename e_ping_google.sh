@@ -1,6 +1,5 @@
-#e_ping_google.sh
 #!/bin/bash
-
+#e_ping_google.sh
 
 TARGET="google.com"
 
